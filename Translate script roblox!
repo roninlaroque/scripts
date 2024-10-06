@@ -9,7 +9,7 @@ pcall(function()
     
     local googlev = isfile'googlev.txt' and readfile'googlev.txt' or ''
     
-    function googleConsent(Body) -- Because google really said: "Fuck you."
+    function googleConsent(Body) -- 
         local args = {}
     
         for match in Body:gmatch('<input type="hidden" name=".-" value=".-">') do
